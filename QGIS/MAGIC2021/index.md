@@ -1,4 +1,4 @@
-# MAGIC QGIS Workshop
+# MAGIC QGIS Workshop  - This is the index.md version
 ### January 8, 2021
 
 
