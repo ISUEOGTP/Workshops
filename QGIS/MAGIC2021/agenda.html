@@ -23,15 +23,16 @@
 
 class: center, middle
 
-## MAGIC Essentials of QGIS Workshop 
-### January 8, 2021
+# MAGIC Essentials of QGIS Workshop 
+### January 8, 2021  <br>
+_updated January 15, 2021_ <br><br>
 
 
 #### Data: https://github.com/ISUEOGTP/Workshops/blob/main/QGIS/MAGIC2021/data.zip
 
 #### This presentation: https://isueogtp.github.io/Workshops/QGIS/MAGIC2021/agenda.html
 
-
+<br>
 _Use arrow keys to move forward/backwards through slide show._
 
 ---
@@ -70,96 +71,17 @@ Geospatial Technology Program Intern
 ---
 
 
-### Today's Agenda and Course Links
+### Today's Agenda Overview
 
-####8:00 - 8:35####
-Welcome and Introductions<br>
-Workshop Overview<br>
-Getting Started<br>
+8:00 - 8:35 Welcome; Introductions; Overview; Getting Started; Break<br><br>
+8:40 – 9:15 Loading Data, Styling Data <br><br>
+9:35 - 10:00 Working with tables <br><br>
+10:00 – 10:20 Challenge Problem and Practice <br><br>
+10:20 – 10:50 Spatial Processing; Plugins; Creating Data; Break/Practice <br><br>
+11:00 – 11:30 Creating Maps; Exporting Maps <br><br>
+11:30 – 11:40 Practice what you have learned <br><br>
+11:40 – 12:00 Export a Web Map; DEM Support; Geotagged Photos; Importing OSM Data; Map Atlas; Georeferencing a raster image<br><br>
 
-- Installing QGIS
-- What is QGIS?
-- Interface Overview
-- Explore Sample Data & Project
-
-5-minute break
-
-<br>
-####8:40 – 9:15####
-Loading Data
-
- - GIS Data Types
- 
-Styling Data<br>
-Exercise: 
-- Loading XYZ layer and visualizing GPS data (Styling a Heat map from GPX points)
-- https://github.com/ISUEOGTP/TaskSheets/blob/main/resources/xyzTileURLs.md
-
-
-<br>
-####9:15 - 9:30####
-Loading Data and Styling on your own <br>
-5-minute break
-
----
-####9:35 - 10:00####
-Working with tables<br>
- - Table Editing 
- - Table Joining
- - Statistics/Summary
- - Calculate Values
-    - Working with expressions
- - Table and Field Management Tips (Brief Intro to Processing Tools)
-
-<br>
-####10:00 – 10:20####
-Practice what you have learned so far (Challenge Problem)
-
-<br>
-####10:20 – 10:50####
-Spatial Processing<br>
- - PlugIns
- - Overview of Vector and Raster Menu
-
-Processing Toolbox
-- Buffering, Clipping, Intersection, Union
-- Spatial Join
-
-Creating Data
-- Digitizing Data
-- Geocoding
-- Creating a GeoPackage
-
-10 Minute Break / Practice
-
----
-
-####11:00 – 11:30####
-Creating Maps
-- Labeling
-- Map Layout
-- Adding Maps and object to a layout
-- Customizing the map layout options/properties
-
-Exporting Maps and Data
-- Exporting Map Layout
-- Map Images
-- SVG and PDF Maps
-- Web Maps (covered in next section)
-
-<br>
-####11:30 – 11:40####
-Practice what you have learned
-
-<br>
-####11:40 – 12:00####
-As time permits
-- Export a Web Map
-- DEM Support
-- Working with Geotagged Photos
-- Importing OSM Data
-- Create a Map Atlas
-- Georeferencing a raster image
 
 ---
 
@@ -206,19 +128,118 @@ It runs on Linux, Unix, Mac OSX, Windows and Android and supports numerous vecto
 
 ---
 
-### Resources
+### Resources to learn QGIS
 
 There are many online sources for QGIS, but first and foremost is the QGIS documentation https://docs.qgis.org/3.16/en/docs/index.html
 
 <br>
 
-Additional resources can be found at https://isueogtp.github.io/Workshops/QGIS/files/QGIS_References_and_Resources.pdf
+A list of additional resources can be found at https://isueogtp.github.io/Workshops/QGIS/files/QGIS_References_and_Resources.pdf
 
 
 ---
 ###  Explore Interface - Hands on!!!
 
-Data files https://github.com/ISUEOGTP/Workshops/blob/main/QGIS/MAGIC2021/data.zip <br><br>
+Data files for this course are available at  https://github.com/ISUEOGTP/Workshops/blob/main/QGIS/MAGIC2021/data.zip <br><br>
+
+---
+
+
+###Loading Data
+_GIS Data Types and example files provided_
+- Shapefile support  
+ - ia_county_utm15n.shp; Iowa_interstates.shp
+- Raster data
+ - naip_2019_nc.tif
+- CSV
+ - participants.csv; sampleCoordinates.csv  - remember x is longitude and Y is latitude!
+- GeoPackage
+ - sample_GeoPackage.gpkg
+- GeoJSON
+ - smileRoute.geojson; also can make your own at http://geojson.io/
+- Connecting to basemaps (Ortho Server)
+ - 2019 CIR https://ortho.gis.iastate.edu/arcgis/rest/services/ortho/naip_2019_cir/ImageServer
+ - GLO Veg_Image and Polygons https://ortho.gis.iastate.edu/arcgis/rest/services/ortho/GLO_vegetation/MapServer
+ - Transportation Borders https://maps.bts.dot.gov/services/rest/services/Transborder/Transborder/MapServer
+ 
+ 
+---
+ 
+###Styling Data
+Exercise: 
+- [PDF Tasksheet Styling a Heat map from GPX points](data/tasksheets/PM2082-19o-XYZ_Tiles_GPX_File_Heatmap.pdf) includes Loading XYZ layers. Optional list of XYZ Tile locations https://isueogtp.github.io/TaskSheets/resources/xyzTileURLs
+
+- 
+Loading Data and Styling on your own <br>
+
+
+---
+###Working with tables
+ - Table Editing 
+ - Table Joining
+ - Statistics/Summary
+ - Calculate Values
+    - Working with expressions
+    - Field Calculations: Changing Text Case in QGIS 2.x https://store.extension.iastate.edu/product/15642 
+ - Table and Field Management Tips (Brief Intro to Processing Tools)
+
+<br><br>
+
+Practice what you have learned so far (Challenge Problem)
+
+---
+
+###Spatial Processing<br>
+PlugIns <br>
+Overview of Vector and Raster Menu <br>
+Processing Toolbox <br>
+- Buffering, Clipping https://store.extension.iastate.edu/product/15649
+- Intersection, Union
+- Spatial Join
+
+Creating Data
+- Digitizing Data
+ - Creating new Shapefiles https://store.extension.iastate.edu/product/15647
+ - Editing Shapefiles https://store.extension.iastate.edu/product/15648
+- Geocoding https://store.extension.iastate.edu/product/15659
+- Creating a GeoPackage
+- Creating Random Points QGIS 2.x  https://store.extension.iastate.edu/product/15643
+
+10 Minute Break / Practice
+
+---
+
+###Creating Maps
+Labeling <br>
+Map Layout <br>
+ - [Task sheet:  Introduction to Print Layouts ](PM2082-20h-Introduction_to_Print_Layouts.pdf)
+ - Adding Maps and object to a layout
+ - Customizing the map layout options/properties
+
+<br>
+Exporting Maps and Data
+- Exporting Map Layout
+- Map Images
+- SVG and PDF Maps
+- Web Maps (covered in next section)
+
+
+<br>
+Practice what you have learned
+
+---
+
+
+###As time permits
+- Export a Web Map
+- DEM Support
+- Working with Geotagged Photos
+- Importing OSM Data https://store.extension.iastate.edu/product/15658
+- Create a Map Atlas
+- Georeferencing a historic raster image https://store.extension.iastate.edu/product/15645
+
+Other resources:
+- QGIS: Road Graph Plugin - Finding Shortest Path https://store.extension.iastate.edu/product/15653 
 
 
 
