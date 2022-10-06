@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xml:lang="en"><Esri><CreaDate>20131009</CreaDate><CreaTime>12572500</CreaTime><SyncOnce>FALSE</SyncOnce><SyncDate>20051206</SyncDate><SyncTime>17172100</SyncTime><ModDate>20051206</ModDate><ModTime>17172100</ModTime><DataProperties><itemProps><itemLocation><linkage Sync="TRUE">file://\\GISMOBILE8-PC\C$\Users\Administrator\Desktop\Essential GIS\Data\Iowa-Statewide data\airports</linkage><protocol Sync="TRUE">Local Area Network</protocol></itemLocation></itemProps><copyHistory><copy source="C:\Essential GIS\Data\Iowa-Statewide data\airports" dest="\\GISMOBILE8-PC\C$\Users\Administrator\Desktop\Essential GIS\Data\Iowa-Statewide data\airports" date="20131009" time="12572500"></copy></copyHistory></DataProperties></Esri><idinfo><citation><citeinfo><origin>Tom Dewitte</origin><pubdate>05/07/94</pubdate><pubinfo><pubplace>Rock Island, IL</pubplace><publish>Army Corp of Engineers, Rock Island District</publish></pubinfo><title>Landing facilities in the state of Iowa as supplied by the FAA</title><ftname Sync="TRUE">airports</ftname><geoform Sync="TRUE">vector digital data</geoform><onlink>ftp://ftp.igsb.uiowa.edu/gis_library/IA_State/Infrastructure/Transportation/airports.zip</onlink></citeinfo><datacred>Tom Dewitte</datacred><native>ArcInfo v. 6.1.1</native></citation><descript><abstract>None</abstract><purpose>This digital, geographically referenced data set was developed by the Iowa Department of Natural Resources to carry out agency responsibilities related to management, protection, and development of Iowa's natural resources.</purpose><langdata Sync="TRUE">en</langdata></descript><timeperd><current>publication date</current><timeinfo><sngdate><caldate>01/08/97</caldate></sngdate></timeinfo></timeperd><status><progress>Complete</progress><update>None planned</update></status><keywords><theme><themekt>None</themekt><themekey>None</themekey></theme></keywords><accconst>None</accconst><useconst>None</useconst><ptcontac><cntinfo><cntperp><cntper>Joost A. Korpel</cntper><cntorg>Iowa Department of Natural Resources</cntorg></cntperp><cntaddr><address>109 Trowbridge Hall</address><city>Iowa City</city><state>IA</state><postal>52242-1319</postal></cntaddr></cntinfo></ptcontac><native Sync="TRUE">Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 2; ESRI ArcCatalog 9.1.0.722</native><spdom><bounding><westbc Sync="TRUE">-96.600755</westbc><eastbc Sync="TRUE">-90.242488</eastbc><northbc Sync="TRUE">43.502096</northbc><southbc Sync="TRUE">40.351680</southbc></bounding><lboundng><leftbc Sync="TRUE">208626.344037</leftbc><rightbc Sync="TRUE">723048.577992</rightbc><bottombc Sync="TRUE">4472443.421283</bottombc><topbc Sync="TRUE">4816574.131651</topbc></lboundng></spdom><natvform Sync="TRUE">Shapefile</natvform></idinfo><dataqual><posacc><horizpa><horizpar>None</horizpar></horizpa></posacc><lineage><srcinfo>None<srcscale>None</srcscale><typesrc>Electronic media</typesrc></srcinfo><procstep><procdesc>None</procdesc></procstep><procstep><procdesc Sync="TRUE">Metadata imported.</procdesc><srcused Sync="TRUE">P:\Metadata\ia_state\Airports.xml</srcused><date Sync="TRUE">20030711</date><time Sync="TRUE">13313800</time></procstep></lineage></dataqual><eainfo><overview><eaover>AIRPORTS_I: Unique identifier for each landing facility.
+
+FACILITY_T: Landing facility type.  Possible types are:
+
+  AIRPORT
+
+  BALLOONPORT
+
+  SEAPLANE BASE
+
+  GLIDERPORT
+
+  HELIPORT
+
+  STOLPORT
+
+  ULTRALIGHT
+
+LOC_IDENT: Location Identifier. A unique 3-4 character alphanumeric identifier assigned to the landing facility (EX. 'ORD' for Chicago O'Hare.)
+
+INFO_EFF_D: Information effective date. (MM/DD/YY)
+
+FAA_REGION:  FAA REGION CODE
+
+CODE  REGION NAME
+
+    AAL ALASKA
+
+    ACE CENTRAL
+
+    AEA EASTERN
+
+    AGL GREAT LAKES
+
+    AIN INTERNATIONAL
+
+    ANE NEW ENGLAND
+
+    ANM NORTHWEST MOUNTAIN
+
+    ASO SOUTHERN
+
+    ASW SOUTHWEST
+
+    AWP WESTERN-PACIFIC
+
+FAA_DISTRI:  FAA District or field office code. (EX. CHI for Chicago)
+
+STATE: Associated state post office code standard two letter abbreviation for U.S. states and territories.
+
+STATE_NAME:  Associated state name.
+
+COUNTY:  Associated county name.
+
+COUNTY_S_S:  Associated counties state (Post Office Code) State where the associated county is located; may not be the same as the associated city's state code.
+
+CITY:  Associated City name.
+
+FACILITY_N: Official Facility name.
+
+OWNER_TYPE:  Airport ownership type.
+
+    PU -    Publicly owned
+
+    PR -    Privately owned
+
+    MA-     Air Force owned
+
+    MN -    Navy owned
+
+    MR -    Army owned
+
+FACILITY_USE:  Facility Use.
+
+    PU - Open to the Public
+
+    PR - Private
+
+FAC_OWNER: Facility owner's name.
+
+OWNER_ADDR:  Owner's address.
+
+OWNER_CITY:  Owner's city of residence.
+
+OWNER_ST_Z:  Owner's state of residence and zip code.
+
+OWNER_PHON: Owner's phone number.
+
+FAC_MANAGE: Facility manager's name.
+
+MANAG_ADDR:  Manager's address.
+
+MANAG_CITY:  Manager's city.
+
+MANAG_ST_Z:  Manager's state and zip code.
+
+MANAG_PHON: Manager's phone.
+
+LATITUDE:  Airport reference point latitude (Degrees-Minutes-Seconds)
+
+LONGITUDE: Airport reference point longitude (Degrees-Minutes-Seconds)
+
+COORD_DET_: Airport reference point determination method.
+
+    E - Estimated
+
+    S - Surveyed
+
+ELEVATION: Airport elevation (nearest foot msl).  Elevation is measured at the highest point on the centerline of the usable landing surface.
+
+ELEV_DET_M: Airport elevation determination method.
+
+MAGN_VAR:  Magnetic variation and determination.  Magnetic variation is measured to the nearest degree.
+
+MAGN_VAR_Y: Magnetic variation epoch year.
+
+TRAFFIC_ALT: Traffic pattern altitude. ( Whole feet AGL)
+
+AERO_CHART:  Aeronautical sectional chart on which facility appears.
+
+DIST_CBD:  Distance from central business district of the associated city to the airport.
+
+DIRECT_CBD:  Direction of the airport from the central business district of associated city. (Nearest 1/8 compass point - EX. NE).
+
+ARTCC_IDET: Boundary ARTCC identifier.  The boundary ARTCC is the FAA air route traffic control center within whose published boundaries the airport lies.  It may not be the controlling ARTCC for the airport if a letter of agreement exists between the boundary ARTCC and another ARTCC.
+
+C_ARTCC_ID: Boundary ARTCC (FAA) computer identifier (EX. ZCW for     Washington ARTCC)
+
+ARTCC_NAME: Boundary ARTCC name.
+
+R_ARTCC_ID: Responsible ARTCC identifier. The responsible ARTCC is the FAA air route traffic control center who has assumed control over the airport through a letter of agreement with the boundary ARTCC.
+
+RC_ARTCC_I: Responsible ARTCC (FAA) computer identifier.
+
+RC_ARTCC_N: Responsible ARTCC name.
+
+FSS_LOCAL: Tie-in FSS physically located on facility.
+
+    Y - Tie-in FSS is on the airport.
+
+    N - tie-in FSS is not on the airport.
+
+FSS_IDENT: Tie-in flight service station (FSS) identifier. (EX. DCA for the Washington FSS.)
+
+FSS_NAME:  Tie-in FSS name. (EX. Washington)
+
+FSS_PHONE: Toll free phone number from airport to FSS for Pilot Briefing Services.  The data describes the type of toll free communications and the number to dial.  The data formats and their meanings are:
+
+      8-NNN-NNNN    Dial 800 then NNN-NNNN
+
+      1-NNN-NNNN    Dial 1-800 then NNN-NNNN
+
+      E-NNNNNNNN  Enterprise number, dial 0 &amp; ask for enterprise  
+
+      NNNNNNNN
+
+      LCNNN-NNNN  Local call- dial NNN-NNNN 
+
+      DL    Direct line telephone at the airport; no dialing  
+
+        required
+
+      Z-NNNNNNNN Zenith Number; dial 0 and ask for zenith     
+
+      NNNNNNNN
+
+      W-NNNNNNN Dial 0 and asl for WX NNNNNNNN
+
+      C-NNNNNNNN Dial 0 and ask for Commerce NNNNNNNN
+
+      LD-NNNNNNN  Long distance call; dial 1-(AREA CODE)    
+
+      NNNNNNN
+
+      LT-NNNNNNN  Long distance call. Dial 1-NNNNNNN
+
+      1-WX-BRIEF     Dial 1-800-WX-BRIEF
+
+      8-WX-BRIEF     Dial 800-WX-BRIEF
+
+ALT_FSS_ID:  Alternate FSS identifier.  Provides the identifier of a full-time flight service station that assumes responsibility for the airport during the off hours of a part-time primary FSS.
+
+ALT_FSS_NAM:  Alternate FSS name.
+
+ALT_FSS_PHO: Toll free phone number from airport to alternate FSS for pilot briefing services. The data describes the type of toll-free communications and the number to dial. The data formats and their meanings are:
+
+      8-NNN-NNNN    Dial 800 then NNN-NNNN
+
+      1-NNN-NNNN    Dial 1-800 then NNN-NNNN
+
+      E-NNNNNNNN    Enterprise number, dial 0 &amp; ask for enterprise  
+
+      NNNNNNNN
+
+      LCNNN-NNNN    Local call- dial NNN-NNNN 
+
+      DL            Direct line telephone at the airport; no dialing  
+
+       required
+
+      Z-NNNNNNNN    Zenith Number; dial 0 and ask for zenith    
+
+      NNNNNNNN
+
+      W-NNNNNNN     Dial 0 and asl for WX NNNNNNNN
+
+      C-NNNNNNNN    Dial 0 and ask for Commerce NNNNNNNN
+
+      LD-NNNNNNN    Long distance call; dial 1-(AREA CODE)    
+
+      NNNNNNN
+
+      LT-NNNNNNN    Long distance call. Dial 1-NNNNNNN
+
+      1-WX-BRIEF    Dial 1-800-WX-BRIEF
+
+      8-WX-BRIEF    Dial 800-WX-BRIEF
+
+NOTAMS: Identifier of the facility responsible for issuing notices to airmen  (NOTAMS) and weather information for the airport.
+
+NOTAMS_D:  Availability of NOTAM  'D' service at airport.
+
+    Y - YES
+
+    N - NO
+
+ACTIV_DATE: airport activation date. (MM/YY)  Provides the month and year that the facility was added to the NFDC airport database.  Note this information is only available for those 
+
+facilities opened since 1981.
+
+CERTIFICAT: Airport certification type and date format is a two character code  followed by the month/year of certification.  Codes AS,BS,CS,DS,ES are for airports having a full certificate under FAR part 139 and receiving scheduling air carrier service from carriers certificated by the Civil Aeronautics Board.  The A,B,C,D,E identifies the aircraft rescue and firefighting index for the airport, and the 'S' is for scheduling air carrier service.  Codes AU,BU,CU,DU,EU are for airports having a full certificate under FAR part 139 but not currently receiving scheduled service.  Code 'LS' is for airports having limited 
+
+certification under FAR part 139 and receiving scheduled air carrier service. Code 'LU' is for airports having limited certification under FAR part 139 and not currently receiving 
+
+scheduled air carrier service. 'N' or a blank indicates the facility is not certificated.
+
+NASP_FED_C: NASP/FEDERAL agreement code.  a combination of 1 to 7 codes that indicate the type of federal agreements existing at the airport. (Ex. NGH)
+
+    N- National plan of integrated airport systems.
+
+    B- Installation of navigational facilities on privately owned airports under F&amp;E program.
+
+    G- Grant agreements under FAAP/ADAP/AIP
+
+    H- Compliance with accessibility to the handicapped.
+
+    P- Surplus property agreement under public law 289.
+
+    R- Surplus property agreement under regulation 16-WAA.
+
+    S- Conveyance under section 16, Federal Airport Act of 1946 or  
+
+    section 23, Airport and Airway development Act of 1970.
+
+    V- Advance planning agreement under FAAP.
+
+    X- Obligations assumed by transfer
+
+    Y- Assurances pursuant to title VI, Civil Rights Act of 1964.
+
+    Z- Conveyance under section 303(C), Federal Aviation Act of 1958.
+
+    1- Grant agreement has expired; however, agreement remains in effect 
+
+    for this facility as long as it is public use.
+
+    2- Section 303(C) authority from FAA Act of 1958 has expired;   
+
+    however, agreement remains in effect for this facility as long as it is public use.
+
+    3- AP-4 agreement under DLAND or DCLA has expired.
+
+    NONE- no grant agreement exists.
+
+    BLANK- no grant agreement exists.
+
+AIRSPACE_D: Airport airspace analysis determination.
+
+      CONDL (Conditional)
+
+      NOT ANALYZED
+
+      NO OBJECTION
+
+      OBJECTIONABLE
+
+CUSTOMS_EN: Facility has been designated by the U.S, treasury as an international airport of entry for customs.
+
+    Y- YES
+
+    N- NO
+
+CUSTOM_LND: Facility has been designated by the U.S. Treasury as a customs landing rights airport.
+
+    Y- YES
+
+    N- NO
+
+JOINT_USE: Facility has military/Civil joint use agreement that allows civil operations at a military airport or military operations at a civil airport.
+
+    Y- YES
+
+    N- NO
+
+MIL_LND_RG: Airport has entered into agreement that grants landing rights to the military.
+
+    Y- YES
+
+    N- NO
+
+EMERG_RIGH: Status of airport that is available for use during a national emergency. These are civil airports that were formerly military airfields but the military services have a continuing 
+
+interest in their use during national emergencies.  Data values are one or a series of alphanumeric codes indicating national emergency status.
+
+    1-  Airports certificated under FAR part 139.
+
+    2-  Civil Airport where military use is subject to lease.
+
+    3P-Airport is partially released from National Emergency use provision.
+
+    3E- Airport is entirely released from National Emergenct use provision.
+
+    4-  Airport includes surplus real property which has been conveyed for, or converted to, revenue production.
+
+    5-  Exclusive military use airport.
+
+    6-  The airport is in the process of disposal or reversion.
+
+    7P- A letter of intent has been issued to release a part of the airport property.
+
+    7E- A letter of intent has been issued to release the entire airport  property.
+
+    8-  An exclusive right has been granted (whether or not in violation of an agreement.)
+
+    8P- An exclusive right has been granted (whether or not in violation of an agreement); however, this exclusive right is of the proprietary type.
+
+    8N- An exclusive right exists through a P.L. 80-289 deed providing  exemption for fuel and oil sales; however, an exclusive right for fuel oil sales has not been granted.
+
+MIL_EM_RIG: Military department(s) that maintain national emergency use interest in this civil facility.
+
+    R-  army
+
+    A-  Air Force
+
+    N-  Navy
+
+INSPECT_MT: Airport inspection method.
+
+    F- Federal
+
+    S- State
+
+    C- Contractor
+
+    1- 5010-1 Public use mailout program.
+
+    2- 5010-2 Private use mailout program.
+
+INSPECT_AG: Agency/Group performing physical inspection.
+
+    F-  FAA Airports foeld personnel.
+
+    S-  State aeronautical personnel.
+
+    C-  Private contract personnel.
+
+    N-  Owner
+
+INSPECT_DA:  Last physical inspection date.
+
+NFO_DATE: Last date information requested was completed by Facility owner or manager.
+
+FUEL_TYPES: Fuel types available for public use at the airport.  There can be up to 8 occurences of a fixed 5 character field.
+
+    80  Grade 80 gasoline (red)
+
+    100 Grade 100 gasoline (green)
+
+    100LL grade 100LL gasoline (low lead blue)
+
+    115 Grade 115 gasoline.
+
+    A Jet A- Kerosene, freeze point -40c
+
+    A1  Jet A-1 - Kerosene, freeze point -40c.
+
+    A1+ JetA-1 - Kerosene, with icing inhibitor freeze point.   
+
+    -50c.
+
+    B Jet B - Wide-cut turbine fuel, freeze point -50c.
+
+    B+  Jet B+ - Wide cut turbine fuel with icing MOGAS - automotive gasoline.
+
+REP_AIRFRA: Airframe repair service availability/ type.
+
+    MAJOR
+
+    MINOR
+
+    NONE
+
+REP_ENGINE: Power plant (engine) repair availability/type.
+
+    MAJOR
+
+    MINOR
+
+    NONE
+
+BTLE_OXY_T: Type of bottled oxygen available (Value represents HIGH and or LOW pressure replacement bottle.)
+
+    HIGH
+
+    LOW
+
+    HIGH/LOW
+
+    NONE
+
+ATTEN_SCHE: Airport attendence schedule (When minimum services are available) Format is months/days/hours where the first part describes the months that the facility is attended, then the days of the week that the facility is open, and finally the hours 
+
+within the day that it is attended.  This field may also contain 'UNATNDD' for unattended facilities.  If there are different schedules for different times of the year the schedules are 
+
+separated by a space (JAN-MAY/ALL/ALL  JUNE-DEC/ALL/SR-SS).
+
+LIGHT_SCHE: Airport lighting schedule.  Value is the beginning-ending times (local time) That lights are operated, Format can be 1900-2300, DUSK-0100, ALL, DUSK-DAWN, NONE,ETC.
+
+TOWER_LOCA: Air traffic control tower located on airport.
+
+    Y- YES
+
+    N- NO
+
+UNICOM_FRE: Unicom frequencies available at the airport there can be up to 6 occurrences.
+
+TRAFFIC_FRE: Common traffic advisory frequency (CTAF)
+
+SEG_CRCLE_: Segmented circle airport marker system on the airport.
+
+    Y- YES
+
+    N- NO
+
+    NONE
+
+BEACON_COL:  Lens color of operable beacon located on the airport.
+
+    CG-   Clear-green (lighted land airport)
+
+    CY-   Clear-yellow (lighted seaplane base)
+
+    CGY- Clear-green-yellow (Heliport)
+
+    SCG- Split=clear-green (lighted military airport)
+
+    C-      Clear (unlighted land airport)
+
+    Y-      Yellow (unlighted seaplane base)
+
+    G-      Green  (lighted land airport)
+
+    NONE
+
+LANDING_FE: Landing fee charged to non-commercial users of airport.
+
+    Y- YES
+
+    N- NO
+
+SNGLE_ENG: Single engine general aviation aircraft.
+
+MULTI_ENG: Multi engine general aviation aircraft.
+
+JET_ENG:  Jet engine general aviation aircraft.
+
+GEN_HELI: General avaition helicopter
+
+GLIDERS: Operational gliders
+
+
+
+MIL_AIRCRA: Operational military aircraft (including helicopters)
+
+ULTRALIGHT: Ultralight aircraft
+
+COMMERCIAL: Commercial services.  Scheduled operations by CAB-certificated carriers or intrastate carriers and any scheduled commuter/cargo carriers.
+
+AIR_TAXI:  Air Taxi.  Air Taxi operators carrying passengers, mail, or mail for revenue.
+
+GEN_AVIATI:  General aviation local operators.  Those operating in the local traffic pattern or within a 20 mile radius of the airport.
+
+GEN_AV_ITI: General aviation itinerant operations.  Those general aviation operations (excluding commuter or air taxi) not qualifying as local military aircraft operations.
+
+MIL_OPER: Military aircraft operations.
+
+<eadetcit>None</eadetcit></eaover></overview><detailed Name="airports"><enttyp><enttypl Sync="TRUE">airports</enttypl><enttypt Sync="TRUE">Feature Class</enttypt><enttypc Sync="TRUE">313</enttypc></enttyp><attr><attrlabl Sync="TRUE">FID</attrlabl><attalias Sync="TRUE">FID</attalias><attrtype Sync="TRUE">OID</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale><attrdef Sync="TRUE">Internal feature number.</attrdef><attrdefs Sync="TRUE">ESRI</attrdefs><attrdomv><udom Sync="TRUE">Sequential unique whole numbers that are automatically generated.</udom></attrdomv></attr><attr><attrlabl Sync="TRUE">Shape</attrlabl><attalias Sync="TRUE">Shape</attalias><attrtype Sync="TRUE">Geometry</attrtype><attwidth Sync="TRUE">0</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale><attrdef Sync="TRUE">Feature geometry.</attrdef><attrdefs Sync="TRUE">ESRI</attrdefs><attrdomv><udom Sync="TRUE">Coordinates defining the features.</udom></attrdomv></attr><attr><attrlabl Sync="TRUE">AREA</attrlabl><attalias Sync="TRUE">AREA</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">19</attwidth><atnumdec Sync="TRUE">6</atnumdec></attr><attr><attrlabl Sync="TRUE">PERIMETER</attrlabl><attalias Sync="TRUE">PERIMETER</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">19</attwidth><atnumdec Sync="TRUE">6</atnumdec></attr><attr><attrlabl Sync="TRUE">AIRPORTS_</attrlabl><attalias Sync="TRUE">AIRPORTS_</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">11</attwidth></attr><attr><attrlabl Sync="TRUE">AIRPORTS_I</attrlabl><attalias Sync="TRUE">AIRPORTS_I</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">11</attwidth></attr><attr><attrlabl Sync="TRUE">FACILITY_T</attrlabl><attalias Sync="TRUE">FACILITY_T</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">13</attwidth></attr><attr><attrlabl Sync="TRUE">LOC_IDENT</attrlabl><attalias Sync="TRUE">LOC_IDENT</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">4</attwidth></attr><attr><attrlabl Sync="TRUE">INFO_EFF_D</attrlabl><attalias Sync="TRUE">INFO_EFF_D</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">8</attwidth></attr><attr><attrlabl Sync="TRUE">FAA_REGION</attrlabl><attalias Sync="TRUE">FAA_REGION</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">3</attwidth></attr><attr><attrlabl Sync="TRUE">FAA_DISTRI</attrlabl><attalias Sync="TRUE">FAA_DISTRI</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">4</attwidth></attr><attr><attrlabl Sync="TRUE">STATE</attrlabl><attalias Sync="TRUE">STATE</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">2</attwidth></attr><attr><attrlabl Sync="TRUE">STATE_NAME</attrlabl><attalias Sync="TRUE">STATE_NAME</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">20</attwidth></attr><attr><attrlabl Sync="TRUE">COUNTY</attrlabl><attalias Sync="TRUE">COUNTY</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">21</attwidth></attr><attr><attrlabl Sync="TRUE">COUNTY_S_S</attrlabl><attalias Sync="TRUE">COUNTY_S_S</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">2</attwidth></attr><attr><attrlabl Sync="TRUE">CITY</attrlabl><attalias Sync="TRUE">CITY</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">26</attwidth></attr><attr><attrlabl Sync="TRUE">FACILITY_N</attrlabl><attalias Sync="TRUE">FACILITY_N</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">42</attwidth></attr><attr><attrlabl Sync="TRUE">OWNER_TYPE</attrlabl><attalias Sync="TRUE">OWNER_TYPE</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">2</attwidth></attr><attr><attrlabl Sync="TRUE">FACILITY_U</attrlabl><attalias Sync="TRUE">FACILITY_U</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">2</attwidth></attr><attr><attrlabl Sync="TRUE">FAC_OWNER</attrlabl><attalias Sync="TRUE">FAC_OWNER</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">29</attwidth></attr><attr><attrlabl Sync="TRUE">OWNER_ADDR</attrlabl><attalias Sync="TRUE">OWNER_ADDR</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">29</attwidth></attr><attr><attrlabl Sync="TRUE">OWNER_CITY</attrlabl><attalias Sync="TRUE">OWNER_CITY</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">25</attwidth></attr><attr><attrlabl Sync="TRUE">OWNER_ST_Z</attrlabl><attalias Sync="TRUE">OWNER_ST_Z</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">20</attwidth></attr><attr><attrlabl Sync="TRUE">OWNER_PHON</attrlabl><attalias Sync="TRUE">OWNER_PHON</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">12</attwidth></attr><attr><attrlabl Sync="TRUE">FAC_MANAGE</attrlabl><attalias Sync="TRUE">FAC_MANAGE</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">29</attwidth></attr><attr><attrlabl Sync="TRUE">MANAG_ADDR</attrlabl><attalias Sync="TRUE">MANAG_ADDR</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">29</attwidth></attr><attr><attrlabl Sync="TRUE">MANAG_CITY</attrlabl><attalias Sync="TRUE">MANAG_CITY</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">25</attwidth></attr><attr><attrlabl Sync="TRUE">MANAG_ST_Z</attrlabl><attalias Sync="TRUE">MANAG_ST_Z</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">20</attwidth></attr><attr><attrlabl Sync="TRUE">MANAG_PHON</attrlabl><attalias Sync="TRUE">MANAG_PHON</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">12</attwidth></attr><attr><attrlabl Sync="TRUE">LATITUDE</attrlabl><attalias Sync="TRUE">LATITUDE</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">14</attwidth></attr><attr><attrlabl Sync="TRUE">LONGITUDE</attrlabl><attalias Sync="TRUE">LONGITUDE</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">14</attwidth></attr><attr><attrlabl Sync="TRUE">COORD_DET_</attrlabl><attalias Sync="TRUE">COORD_DET_</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">1</attwidth></attr><attr><attrlabl Sync="TRUE">ELEVATION</attrlabl><attalias Sync="TRUE">ELEVATION</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">5</attwidth></attr><attr><attrlabl Sync="TRUE">ELEV_DET_M</attrlabl><attalias Sync="TRUE">ELEV_DET_M</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">1</attwidth></attr><attr><attrlabl Sync="TRUE">MAGN_VAR</attrlabl><attalias Sync="TRUE">MAGN_VAR</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">3</attwidth></attr><attr><attrlabl Sync="TRUE">MAGN_VAR_Y</attrlabl><attalias Sync="TRUE">MAGN_VAR_Y</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">2</attwidth></attr><attr><attrlabl Sync="TRUE">TRAFFIC_AL</attrlabl><attalias Sync="TRUE">TRAFFIC_AL</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">4</attwidth></attr><attr><attrlabl Sync="TRUE">AERO_CHART</attrlabl><attalias Sync="TRUE">AERO_CHART</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">16</attwidth></attr><attr><attrlabl Sync="TRUE">DIST_CBD</attrlabl><attalias Sync="TRUE">DIST_CBD</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">2</attwidth></attr><attr><attrlabl Sync="TRUE">DIRECT_CBD</attrlabl><attalias Sync="TRUE">DIRECT_CBD</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">3</attwidth></attr><attr><attrlabl Sync="TRUE">ARTCC_IDEN</attrlabl><attalias Sync="TRUE">ARTCC_IDEN</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">3</attwidth></attr><attr><attrlabl Sync="TRUE">C_ARTCC_ID</attrlabl><attalias Sync="TRUE">C_ARTCC_ID</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">3</attwidth></attr><attr><attrlabl Sync="TRUE">ARTCC_NAME</attrlabl><attalias Sync="TRUE">ARTCC_NAME</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">20</attwidth></attr><attr><attrlabl Sync="TRUE">R_ARTCC_ID</attrlabl><attalias Sync="TRUE">R_ARTCC_ID</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">3</attwidth></attr><attr><attrlabl Sync="TRUE">RC_ARTCC_I</attrlabl><attalias Sync="TRUE">RC_ARTCC_I</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">3</attwidth></attr><attr><attrlabl Sync="TRUE">RC_ARTCC_N</attrlabl><attalias Sync="TRUE">RC_ARTCC_N</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">20</attwidth></attr><attr><attrlabl Sync="TRUE">FSS_LOCAL</attrlabl><attalias Sync="TRUE">FSS_LOCAL</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">1</attwidth></attr><attr><attrlabl Sync="TRUE">FSS_IDENT</attrlabl><attalias Sync="TRUE">FSS_IDENT</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">4</attwidth></attr><attr><attrlabl Sync="TRUE">FSS_NAME</attrlabl><attalias Sync="TRUE">FSS_NAME</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">26</attwidth></attr><attr><attrlabl Sync="TRUE">FSS_PHONE</attrlabl><attalias Sync="TRUE">FSS_PHONE</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">10</attwidth></attr><attr><attrlabl Sync="TRUE">ALT_FSS_ID</attrlabl><attalias Sync="TRUE">ALT_FSS_ID</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">4</attwidth></attr><attr><attrlabl Sync="TRUE">ALT_FSS_NA</attrlabl><attalias Sync="TRUE">ALT_FSS_NA</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">26</attwidth></attr><attr><attrlabl Sync="TRUE">ALT_FSS_PH</attrlabl><attalias Sync="TRUE">ALT_FSS_PH</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">10</attwidth></attr><attr><attrlabl Sync="TRUE">NOTAMS_FAC</attrlabl><attalias Sync="TRUE">NOTAMS_FAC</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">4</attwidth></attr><attr><attrlabl Sync="TRUE">NOTAM_D</attrlabl><attalias Sync="TRUE">NOTAM_D</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">1</attwidth></attr><attr><attrlabl Sync="TRUE">ACTIV_DATE</attrlabl><attalias Sync="TRUE">ACTIV_DATE</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">6</attwidth></attr><attr><attrlabl Sync="TRUE">CERTIFICAT</attrlabl><attalias Sync="TRUE">CERTIFICAT</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">8</attwidth></attr><attr><attrlabl Sync="TRUE">NASP_FED_C</attrlabl><attalias Sync="TRUE">NASP_FED_C</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">7</attwidth></attr><attr><attrlabl Sync="TRUE">AIRSPACE_D</attrlabl><attalias Sync="TRUE">AIRSPACE_D</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">13</attwidth></attr><attr><attrlabl Sync="TRUE">CUSTOMS_EN</attrlabl><attalias Sync="TRUE">CUSTOMS_EN</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">1</attwidth></attr><attr><attrlabl Sync="TRUE">CUSTOM_LAN</attrlabl><attalias Sync="TRUE">CUSTOM_LAN</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">1</attwidth></attr><attr><attrlabl Sync="TRUE">JOINT_USE</attrlabl><attalias Sync="TRUE">JOINT_USE</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">1</attwidth></attr><attr><attrlabl Sync="TRUE">MIL_LAND_R</attrlabl><attalias Sync="TRUE">MIL_LAND_R</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">1</attwidth></attr><attr><attrlabl Sync="TRUE">EMERG_RIGH</attrlabl><attalias Sync="TRUE">EMERG_RIGH</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">18</attwidth></attr><attr><attrlabl Sync="TRUE">MIL_EM_RIG</attrlabl><attalias Sync="TRUE">MIL_EM_RIG</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">6</attwidth></attr><attr><attrlabl Sync="TRUE">INSPECT_MT</attrlabl><attalias Sync="TRUE">INSPECT_MT</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">2</attwidth></attr><attr><attrlabl Sync="TRUE">INSPECT_AG</attrlabl><attalias Sync="TRUE">INSPECT_AG</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">1</attwidth></attr><attr><attrlabl Sync="TRUE">INSPECT_DA</attrlabl><attalias Sync="TRUE">INSPECT_DA</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">6</attwidth></attr><attr><attrlabl Sync="TRUE">INFO_DATE</attrlabl><attalias Sync="TRUE">INFO_DATE</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">6</attwidth></attr><attr><attrlabl Sync="TRUE">FUEL_TYPES</attrlabl><attalias Sync="TRUE">FUEL_TYPES</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">40</attwidth></attr><attr><attrlabl Sync="TRUE">REP_FRAME</attrlabl><attalias Sync="TRUE">REP_FRAME</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">5</attwidth></attr><attr><attrlabl Sync="TRUE">REP_ENGINE</attrlabl><attalias Sync="TRUE">REP_ENGINE</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">5</attwidth></attr><attr><attrlabl Sync="TRUE">BTLE_OXY_T</attrlabl><attalias Sync="TRUE">BTLE_OXY_T</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">8</attwidth></attr><attr><attrlabl Sync="TRUE">BULK_OXY_T</attrlabl><attalias Sync="TRUE">BULK_OXY_T</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">8</attwidth></attr><attr><attrlabl Sync="TRUE">ATTEN_SCHE</attrlabl><attalias Sync="TRUE">ATTEN_SCHE</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">77</attwidth></attr><attr><attrlabl Sync="TRUE">LIGHT_SCHE</attrlabl><attalias Sync="TRUE">LIGHT_SCHE</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">9</attwidth></attr><attr><attrlabl Sync="TRUE">TOWER_LOCA</attrlabl><attalias Sync="TRUE">TOWER_LOCA</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">1</attwidth></attr><attr><attrlabl Sync="TRUE">UNICOM_FRE</attrlabl><attalias Sync="TRUE">UNICOM_FRE</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">42</attwidth></attr><attr><attrlabl Sync="TRUE">TRAFFIC_FR</attrlabl><attalias Sync="TRUE">TRAFFIC_FR</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">7</attwidth></attr><attr><attrlabl Sync="TRUE">SEG_CRCLE_</attrlabl><attalias Sync="TRUE">SEG_CRCLE_</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">4</attwidth></attr><attr><attrlabl Sync="TRUE">BEACON_COL</attrlabl><attalias Sync="TRUE">BEACON_COL</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">3</attwidth></attr><attr><attrlabl Sync="TRUE">LANDING_FE</attrlabl><attalias Sync="TRUE">LANDING_FE</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">1</attwidth></attr><attr><attrlabl Sync="TRUE">SNGLE_ENG</attrlabl><attalias Sync="TRUE">SNGLE_ENG</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">3</attwidth></attr><attr><attrlabl Sync="TRUE">MULTI_ENG</attrlabl><attalias Sync="TRUE">MULTI_ENG</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">3</attwidth></attr><attr><attrlabl Sync="TRUE">JET_ENG</attrlabl><attalias Sync="TRUE">JET_ENG</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">3</attwidth></attr><attr><attrlabl Sync="TRUE">GEN_HELI</attrlabl><attalias Sync="TRUE">GEN_HELI</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">3</attwidth></attr><attr><attrlabl Sync="TRUE">GLIDERS</attrlabl><attalias Sync="TRUE">GLIDERS</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">3</attwidth></attr><attr><attrlabl Sync="TRUE">MIL_AIRCRA</attrlabl><attalias Sync="TRUE">MIL_AIRCRA</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">3</attwidth></attr><attr><attrlabl Sync="TRUE">ULTRALIGHT</attrlabl><attalias Sync="TRUE">ULTRALIGHT</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">3</attwidth></attr><attr><attrlabl Sync="TRUE">COMMERCIAL</attrlabl><attalias Sync="TRUE">COMMERCIAL</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">6</attwidth></attr><attr><attrlabl Sync="TRUE">AIR_TAXI</attrlabl><attalias Sync="TRUE">AIR_TAXI</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">6</attwidth></attr><attr><attrlabl Sync="TRUE">GEN_AVIATI</attrlabl><attalias Sync="TRUE">GEN_AVIATI</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">6</attwidth></attr><attr><attrlabl Sync="TRUE">GEN_AV_ITI</attrlabl><attalias Sync="TRUE">GEN_AV_ITI</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">6</attwidth></attr><attr><attrlabl Sync="TRUE">MIL_OPER</attrlabl><attalias Sync="TRUE">MIL_OPER</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">6</attwidth></attr><attr><attrlabl Sync="TRUE">CO_NUMBER</attrlabl><attalias Sync="TRUE">CO_NUMBER</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">2</attwidth></attr><attr><attrlabl Sync="TRUE">CO_NAME</attrlabl><attalias Sync="TRUE">CO_NAME</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">14</attwidth></attr></detailed></eainfo><distinfo><distrib>Iowa Department of Natural Resources</distrib><resdesc>Airports</resdesc><distliab>This digital, geographically referenced data set was developed by the Iowa Department of Natural Resources to carry out agency responsibilities related to management, protection, and development of Iowa's natural resources.  It resides in the Natural Resources Geographic Information System library. Although efforts have been made to make it useful to the Department, the Department assumes no responsibility for errors in the information.  Similarly the Department assumes no responsibility for the consequences of inappropriate uses or interpretations of the data made by anyone to whom this data has been made available.  The Department bears no responsibility to inform users of any changes made to this data.  Anyone using this data is advised that precision implied by the coverage may far exceed actual precision.  Comments on this data are invited and the Department would appreciate that documented errors be brought to staff attention.  The development of the coverages in the NRGIS Library represents a major investment of staff time and effort.  As a professional responsibility, we expect that the Iowa DNR will receive proper credit when you utilize these GIS coverages and that the original documentation will remain with any redistribution of these coverages.</distliab><stdorder><digform><digtinfo>Shapefile<formverd>01/08/97</formverd><transize Sync="TRUE">0.008</transize><dssize Sync="TRUE">0.008</dssize></digtinfo><digtopt><onlinopt><computer><networka><networkr>ftp://ftp.igsb.uiowa.edu/gis_library/IA_state/Infrastructure/Transportation/Airports.zip</networkr></networka></computer></onlinopt></digtopt></digform></stdorder></distinfo><metainfo><metc><cntinfo><cntorgp><cntper>Casey Kohrt</cntper><cntorg>Iowa Department of Natural Resources - Geological Survey</cntorg></cntorgp><cntaddr><address>109 Trowbridge Hall</address><city>Iowa City</city><state>IA</state><postal>52242-1319</postal><addrtype>Mailing and Physical</addrtype></cntaddr><cntvoice>319-335-1353</cntvoice><cntemail>gis_library@igsb.uiowa.edu</cntemail></cntinfo></metc><metac>None</metac><metuc>None</metuc><langmeta Sync="TRUE">en</langmeta><metstdn Sync="TRUE">FGDC Content Standards for Digital Geospatial Metadata</metstdn><metstdv Sync="TRUE">FGDC-STD-001-1998</metstdv><mettc Sync="TRUE">local time</mettc><metd Sync="TRUE">20051206</metd><metextns><onlink Sync="TRUE">http://www.esri.com/metadata/esriprof80.html</onlink><metprof Sync="TRUE">ESRI Metadata Profile</metprof></metextns></metainfo><citeinfo><origin>Tom Dewitte</origin><pubdate>Complete</pubdate><title>Airports</title><geoform>Shapefile</geoform><pubinfo><pubplace>Rock Island, IL</pubplace><publish>Army Corp of Engineers, Rock Island District</publish></pubinfo><othercit>None</othercit></citeinfo><timeinfo><sngdate><caldate>01/08/97</caldate></sngdate></timeinfo><cntinfo><cntperp><cntper>Casey Kohrt</cntper><cntorg>Iowa Department of Natural Resources - Geological Survey</cntorg></cntperp><cntaddr><addrtype>Mailing and Physical</addrtype><address>109 Trowbridge Hall</address><city>Iowa City</city><state>IA</state><postal>52242-1319</postal></cntaddr><cntvoice>319-335-1353</cntvoice><cntemail>gis_library@igsb.uiowa.edu</cntemail></cntinfo><dataIdInfo><envirDesc Sync="TRUE">Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 2; ESRI ArcCatalog 9.1.0.722</envirDesc><dataLang><languageCode Sync="TRUE" value="en"></languageCode></dataLang><idCitation><resTitle Sync="TRUE">airports</resTitle><presForm><PresFormCd Sync="TRUE" value="005"></PresFormCd></presForm></idCitation><spatRpType><SpatRepTypCd Sync="TRUE" value="001"></SpatRepTypCd></spatRpType><geoBox esriExtentType="decdegrees"><westBL Sync="TRUE">-96.600755</westBL><eastBL Sync="TRUE">-90.242488</eastBL><northBL Sync="TRUE">43.502096</northBL><southBL Sync="TRUE">40.35168</southBL><exTypeCode Sync="TRUE">1</exTypeCode></geoBox><dataExt><geoEle><GeoBndBox esriExtentType="native"><westBL Sync="TRUE">208626.344037</westBL><eastBL Sync="TRUE">723048.577992</eastBL><northBL Sync="TRUE">4816574.131651</northBL><southBL Sync="TRUE">4472443.421283</southBL><exTypeCode Sync="TRUE">1</exTypeCode></GeoBndBox></geoEle></dataExt></dataIdInfo><mdLang><languageCode Sync="TRUE" value="en"></languageCode></mdLang><mdStanName Sync="TRUE">ISO 19115 Geographic Information - Metadata</mdStanName><mdStanVer Sync="TRUE">DIS_ESRI1.0</mdStanVer><mdChar><CharSetCd Sync="TRUE" value="004"></CharSetCd></mdChar><mdHrLv><ScopeCd Sync="TRUE" value="005"></ScopeCd></mdHrLv><mdHrLvName Sync="TRUE">dataset</mdHrLvName><distInfo><distributor><distorTran><onLineSrc><orDesc Sync="TRUE">002</orDesc><linkage Sync="TRUE">file://\\Design-gis\courses\CRP 452-552\Students\anupreet\Extension_Publication\Basics\Querying\airports.shp</linkage><protocol Sync="TRUE">Local Area Network</protocol></onLineSrc><transSize Sync="TRUE">0.008</transSize></distorTran><distorFormat><formatName Sync="TRUE">Shapefile</formatName></distorFormat></distributor></distInfo><spdoinfo><direct Sync="TRUE">Vector</direct><ptvctinf><esriterm Name="airports"><efeatyp Sync="TRUE">Simple</efeatyp><efeageom Sync="TRUE">Point</efeageom><esritopo Sync="TRUE">FALSE</esritopo><efeacnt Sync="TRUE">313</efeacnt><spindex Sync="TRUE">TRUE</spindex><linrefer Sync="TRUE">FALSE</linrefer></esriterm><sdtsterm Name="airports"><sdtstype Sync="TRUE">Entity point</sdtstype><ptvctcnt Sync="TRUE">313</ptvctcnt></sdtsterm></ptvctinf></spdoinfo><spref><horizsys><cordsysn><geogcsn Sync="TRUE">GCS_North_American_1983</geogcsn><projcsn Sync="TRUE">NAD_1983_UTM_Zone_15N</projcsn></cordsysn><planar><planci><plance Sync="TRUE">coordinate pair</plance><plandu Sync="TRUE">meters</plandu><coordrep><absres Sync="TRUE">0.001024</absres><ordres Sync="TRUE">0.001024</ordres></coordrep></planci><gridsys><gridsysn Sync="TRUE">Universal Transverse Mercator</gridsysn><utm><utmzone Sync="TRUE">15</utmzone><transmer><sfctrmer Sync="TRUE">0.999600</sfctrmer><longcm Sync="TRUE">-93.000000</longcm><latprjo Sync="TRUE">0.000000</latprjo><feast Sync="TRUE">500000.000000</feast><fnorth Sync="TRUE">0.000000</fnorth></transmer></utm></gridsys></planar><geodetic><horizdn Sync="TRUE">North American Datum of 1983</horizdn><ellips Sync="TRUE">Geodetic Reference System 80</ellips><semiaxis Sync="TRUE">6378137.000000</semiaxis><denflat Sync="TRUE">298.257222</denflat></geodetic></horizsys></spref><refSysInfo><RefSystem><refSysID><identCode Sync="TRUE">NAD_1983_UTM_Zone_15N</identCode></refSysID></RefSystem></refSysInfo><spatRepInfo><VectSpatRep><topLvl><TopoLevCd Sync="TRUE" value="001"></TopoLevCd></topLvl><geometObjs Name="airports"><geoObjTyp><GeoObjTypCd Sync="TRUE" value="004"></GeoObjTypCd></geoObjTyp><geoObjCnt Sync="TRUE">313</geoObjCnt></geometObjs></VectSpatRep></spatRepInfo><mdDateSt Sync="TRUE">20051206</mdDateSt></metadata>
